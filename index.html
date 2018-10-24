@@ -8,12 +8,18 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css">
-	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway:regular,bold&subset=Latin">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800" rel="stylesheet">
 	<title>Roshni Shaik</title>
-	<script src="js/modernizr.js"></script>
-	<script src="js/pace.min.js"></script>
+	
+	<script src="js/jquery.countTo.min.js"></script>
+	<script src="js/jquery.nicescroll.min.js"></script>
+	<script src="js/typed.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/plugins.js"></script>
 
 	<link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/pe-icon-7-stroke.min.css">
+    <link rel="stylesheet" href="css/slick.min.css">
 	<link rel="icon" type="image/png" href="images/favicon.png">
 
 </head>
@@ -64,7 +70,9 @@
 	<div id="about" class="container-fluid">
 		<div class="row section-intro">
 			<div class="col-sm-12">
-				<div class="text-center line1"><h3>ABOUT</h3></div>
+				<div class="text-center line1 resume-header">
+					<h2 style="color:#cc0000">ABOUT</h2>
+				</div>
 				<div class="text-center line2">Let me introduce myself.</div>
 				<div class="row intro-info">
 					<div class="col-sm-2"></div>
@@ -180,11 +188,13 @@
 	<div id="timeline" class="bg-grey">
 		<section id="resume" class="grey-section">
 			<div class="row resume-timeline">
-                <div class="col-sm-12">
-                    <div class="text-center line1"><h3>TIMELINE</h3></div>
-                    <div class="text-center line2">Work Experience & Education</div>
-                </div>
 				<div class="col-sm-12">
+					<div class="text-center line1 resume-header">
+						<h2>TIMELINE</h2>
+					</div>
+					<div class="text-center line2">Work Experience & Education</div>
+				</div>
+				<div class="col-sm-12 text-justify">
 					<div class="timeline-wrap">
 						<div class="timeline-block">
 							<div class="timeline-ico">
@@ -199,10 +209,10 @@
 								<p class>Worked in multiple projects on Microsoft Dynamics 365 and D365 for Retail for the
 									development of varied functionalities of an enterprise such as to drive business results with
 									next-generation, multi-channel applications that infuse artificial intelligence (AI), mixed
-									reality, social, and mobile capabilities for rapid innovation Experience with and knowledge of 
+									reality, social, and mobile capabilities for rapid innovation Experience with and knowledge of
 									SDLC methodologies and implementation/release
 									management best practices, especially Agile methodology, Sure Step 365
-								Skilled in data migration and management framework through data entities and their import/export</p>
+									Skilled in data migration and management framework through data entities and their import/export</p>
 							</div>
 						</div> <!-- /timeline-block -->
 						<div class="timeline-block">
@@ -258,14 +268,16 @@
 		<section id="resume" class="grey-section" style="background-color: white;">
 			<div class="row section-intro">
 				<div class="col-sm-12">
-					<h5></h5>
+					<div class="resume-header">
+						<h2>Projects</h2>
+					</div>
 					<h1>Check Out some of my works!</h1>
 					<p class="lead"></p>
 				</div>
 			</div> <!-- /section-intro-->
-			<div class="row resume-timeline">
-				<div class="col-sm-12 resume-header">
-					<h2>Projects</h2>
+			<div class="row resume-timeline text-justify">
+				<div class="col-sm-12 ">
+					
 				</div> <!-- /resume-header -->
 				<div class="col-sm-12">
 					<div class="timeline-wrap">
@@ -279,9 +291,10 @@
 							</div>
 							<div class="timeline-content">
 								<h4>Smart Maintenance of Toilet</h4>
-								<p class="text-center">A project developed as part of Microsoft's Hackathon, which is created on Raspberry Pi. 
-									The prototype currently has 3 sensors - alight sensor, a camera, and a methane senor. 
-									The camera will use Microsoft's Face Cognitive Service and the data from IOT sensors are processed by Stream Analytics.
+								<p>A project developed as part of Microsoft's Hackathon, which is created on Raspberry Pi.
+									The prototype currently has 3 sensors - alight sensor, a camera, and a methane senor.
+									The camera will use Microsoft's Face Cognitive Service and the data from IOT sensors are processed by Stream
+									Analytics.
 									Power BI is being used to gain insights from the data and generate Power BI reports.</p>
 							</div>
 						</div> <!-- /timeline-block -->
@@ -295,7 +308,7 @@
 							</div>
 							<div class="timeline-content">
 								<h4>Sentence classification using Convolutional Neural Networks</h4>
-								<p>Implemented Convolutional Neural Networks with an embedding layer, hidden Convolutional layers and 
+								<p>Implemented Convolutional Neural Networks with an embedding layer, hidden Convolutional layers and
 									max-pooling layer in Tensorflow in python to predict the polarity of a sentence.</p>
 							</div>
 						</div> <!-- /timeline-block -->
@@ -309,9 +322,11 @@
 							</div>
 							<div class="timeline-content">
 								<h4>Prediction of Stock Prices using Neural Networks</h4>
-								<p>Developed feed forward neural network model with 4 hidden, input and out put layers. The hidden 
-                                layers are transformed by Rectified Linear Unit activation function(ReLU). Mean squared error function is used as cost function.
-                                Adaptive Moment Estimation optimizer is used to take care of necessary computations that are used to adapt network’s weight and bias variables during training.</p>
+								<p>Developed feed forward neural network model with 4 hidden, input and out put layers. The hidden
+									layers are transformed by Rectified Linear Unit activation function(ReLU). Mean squared error function is used
+									as cost function.
+									Adaptive Moment Estimation optimizer is used to take care of necessary computations that are used to adapt
+									network’s weight and bias variables during training.</p>
 							</div>
 						</div> <!-- /timeline-block -->
 						<div class="timeline-block">
@@ -324,8 +339,9 @@
 							</div>
 							<div class="timeline-content">
 								<h4>Sentiment Analysis of Movie reviews using Machine Learning Algorithms </h4>
-								<p>Implemented machine learning algorithms such as support Vector Machine, Naive Bayes, linear and logistic regressions 
-                                    combinedly using python and optimized the Naive Bayes algorithm and made a comparative
+								<p>Implemented machine learning algorithms such as support Vector Machine, Naive Bayes, linear and logistic
+									regressions
+									combinedly using python and optimized the Naive Bayes algorithm and made a comparative
 									analysis of these on a given dataset and achieved a max accuracy of about 85% for the optimized algorithm.
 							</div>
 						</div> <!-- /timeline-block -->
@@ -339,10 +355,14 @@
 							</div>
 							<div class="timeline-content">
 								<h4>Adaptive Quiz application </h4>
-								<p>VB.Net application with complete functionalities of a quiz system with adaptive questions in different fields.
-                                    Performed analysis using R programming to give insights about the data where the test takers scored most in a particular field of study. 
-                                    Built Machine Learning models to assess student’s performance and generate adaptive test based on the previous questions.
-                                    Recommender system was built to give suggestions to the test takers about the various tests they might be interested in, based on their previous tests taken.
+								<p>VB.Net application with complete functionalities of a quiz system with adaptive questions in different
+									fields.
+									Performed analysis using R programming to give insights about the data where the test takers scored most in a
+									particular field of study.
+									Built Machine Learning models to assess student’s performance and generate adaptive test based on the previous
+									questions.
+									Recommender system was built to give suggestions to the test takers about the various tests they might be
+									interested in, based on their previous tests taken.
 
 							</div>
 						</div> <!-- /timeline-block -->
@@ -358,44 +378,127 @@
 
 	<!-- Extra Curricular -->
 	<div id="extra" class="container-fluid text-center">
-		<h2>Achievements & Extra-Curriculars</h2>
-		<br><br>
-		<div class="row slideanim">
-			<div class="col-sm-2"></div>
-			<div class="col-md-4 col-sm-12">
-			  <div class="panel panel-default text-center">
-				<div class="panel-heading">
-				  <h3>Certifications</h3>
+		<!-- Start Testimonials -->
+		<div class="testimonials">
+			<div class="container">
+				<div class="mrkayo-main-title">
+					<h2 style="color: #ffffff">
+						Achievements & Extra-Curriculars
+						<span class="kayo-line"></span>
+					</h2>
 				</div>
-				<div class="panel-body">
-				  <p><ul>
-                        <li>532 Developing Microsoft Azure Solutions</li>
-                        <li>Microsoft Certified Professional</li>
-                   </ul></p>
+				<div class="testimonials-slider-container">
+					<!-- Testimonials Slider -->
+					<div class="testimonials-slider">
+						<!-- Testimonials Slider Box -->
+						<div class="testi-box text-center">
+								<div class="img-box">
+									<img src="images/users/01.png" alt="">
+								</div>
+								<div class="testi-user-info">
+									<h3>Certifications</h3>
+									<h5><a href="certificate.pdf" target="_blank">View Certificates</a>.</h5>
+								</div>
+								<div class="testi-desc-box">
+									<i>“</i>
+									<p>
+										Praesent et purus ac libero euismod egestas. Aliquam feugiat luctus eros eget
+										maecenas
+										semper pulvinar. tiam in auctor tortor. Aliquam vulputate risus placerat congue
+										ornare.
+										Donec semper odio non efficitur congue.
+									</p>
+									<i>”</i>
+								</div>
+							</div>
+							<!-- Testimonials Slider Box -->
+						<div class="testi-box text-center">
+							<div class="img-box">
+								<img src="images/users/03.png" alt="">
+							</div>
+							<div class="testi-user-info">
+								<h3>Coding competitions</h3>
+								<h5><a href="coding.pdf" target="_blank">View Certificates</a></h5>
+							</div>
+							<div class="testi-desc-box">
+								<i>“</i>
+								<p>
+									Praesent et purus ac libero euismod egestas. Aliquam feugiat luctus eros eget
+									maecenas
+									semper pulvinar. tiam in auctor tortor. Aliquam vulputate risus placerat congue
+									ornare.
+									Donec semper odio non efficitur congue.Praesent et purus ac libero euismod egestas. Aliquam feugiat luctus eros eget
+									maecenas
+									semper pulvinar. tiam in auctor tortor. Aliquam vulputate risus placerat congue
+									ornare.
+									Donec semper odio non efficitur congue.Praesent et purus ac libero euismod egestas. Aliquam feugiat luctus eros eget
+									maecenas
+									semper pulvinar. tiam in auctor tortor. Aliquam vulputate risus placerat congue
+									ornare.
+									Donec semper odio non efficitur congue.
+								</p>
+								<i>”</i>
+							</div>
+						</div>
+						<!-- Testimonials Slider Box -->
+						<div class="testi-box text-center">
+							<div class="img-box">
+								<img src="images/users/02.png" alt="">
+							</div>
+							<div class="testi-user-info">
+								<h3>Volunteering Experience</h3>
+								<h5><a href="collegevolunteer.pdf" target="_blank">View Certificates</a></h5>
+							</div>
+							<div class="testi-desc-box">
+								<i>“</i>
+								<p>
+									Praesent et purus ac libero euismod egestas. Aliquam feugiat luctus eros eget
+									maecenas
+									semper pulvinar. tiam in auctor tortor. Aliquam vulputate risus placerat congue
+									ornare.
+									Donec semper odio non efficitur congue.
+								</p>
+								<i>”</i>
+							</div>
+						</div>
+						<!-- Testimonials Slider Box -->
+						<div class="testi-box text-center">
+							<div class="img-box">
+								<img src="images/users/04.png" alt="">
+							</div>
+							<div class="testi-user-info">
+								<h3>Work</h3>
+								<h5>Microsoft</h5>
+							</div>
+							<div class="testi-desc-box">
+								<i>“</i>
+								<p>
+									Praesent et purus ac libero euismod egestas. Aliquam feugiat luctus eros eget
+									maecenas
+									semper pulvinar. tiam in auctor tortor. Aliquam vulputate risus placerat congue
+									ornare.
+									Donec semper odio non efficitur congue.
+								</p>
+								<i>”</i>
+							</div>
+						</div>
+						<!-- Testimonials Slider Box -->
+					</div>
+					<!-- Silder Paging -->
+					<ul class="paging-container list-unstyled text-center list-inline">
+						<li class="testimonials-arrows" id="testimonial-prevArrow">
+							<div class="testimonials-client-page"></div>
+							<i class="fa fa-chevron-left"></i>
+						</li>
+						<li id="testimonial-paging"></li>
+						<li class="testimonials-arrows" id="testimonial-nextArrow">
+							<div class="testimonials-client-page"></div>
+							<i class="fa fa-chevron-right"></i>
+						</li>
+					</ul>
 				</div>
-			  </div> 
-			</div> 
-			<div class="col-md-4 col-sm-12">
-			  <div class="panel panel-default text-center">
-				<div class="panel-heading">
-				  <h3>Volunteer Experience</h3>
-				</div>
-				<div class="panel-body">
-                    <p>
-                        <ul>
-                            <li>Organized and volunteered many activities at Microsoft, India to enhance employee engagement.</li>
-                            <li>Actively involved in volunteering, IP-Harvest initiative by encouraging multiple project 
-                            teams to re-use and harvest IP which in turn has reduced the effort and time of the delivery of the project.</li>
-                            <li>Achieved second best project for development of a prototype of Smart maintenance of Toilets at Hackathon workshop.</li>
-                            <li>Coordinated multiple events like IHack Workshop by EI Systems in Jawaharlal Nehru Technological University, Hyderabad.</li>
-                            <li>Participated in multiple coding competitions.</li>
-                            <li>Accoladed for Web Development and SEO Workshop by Goyal Infotech Technologies.</li>
-                        </ul>
-                    </p>
-				</div>
-			  </div> 
-			</div> 
-		  </div>
+			</div>
+		</div>
 	</div>
 
 	<!-- Contact -->
@@ -435,7 +538,8 @@
 		<a href="#myPage" title="To Top">
 			<span class="glyphicon glyphicon-chevron-up"></span>
 		</a>
-		<p>Designed and Developed by <a href="https://www.linkedin.com/in/roshni-shaik-6336aa10a/" target="_blank">Roshni Shaik</a></p>
+		<p>Designed and Developed by <a href="https://www.linkedin.com/in/roshni-shaik-6336aa10a/" target="_blank">Roshni
+				Shaik</a></p>
 		<div>
 			<img src="images/bootstrap.png" alt="Bootstrap" title="Bootstrap">
 		</div>
