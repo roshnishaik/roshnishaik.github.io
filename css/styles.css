@@ -184,25 +184,25 @@ footer .glyphicon {
     width: 80%;
 }
 .ds-bar {
-    width: 70%;
+    width: 75%;
 }
 .front-bar {
-    width: 90%;
-}
-.java-bar {
-    width: 50%;
-}
-.js-bar {
     width: 70%;
 }
+.java-bar {
+    width: 90%;
+}
+.js-bar {
+    width: 95%;
+}
 .ml-bar {
-    width: 40%;
+    width: 88%;
 }
 .php-bar {
     width: 70%;
 }
 .py-bar {
-    width: 60%;
+    width: 80%;
 }
 .sql-bar {
     width: 80%;
